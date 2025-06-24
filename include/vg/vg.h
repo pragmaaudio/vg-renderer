@@ -35,7 +35,7 @@
 #endif
 
 #ifndef VG_CONFIG_UV_INT16
-#	define VG_CONFIG_UV_INT16 1
+#	define VG_CONFIG_UV_INT16 0
 #endif
 
 // If set to 1, submitCommandList() calls pustState()/popState() and resetClip() before and after
@@ -51,7 +51,7 @@
 // If you care about perf so much that an indirect unconditional jump is a problem for you, or if you aren't
 // planning on using command lists at all, set this to 0 and use only clXXX functions to build command lists.
 #ifndef VG_CONFIG_COMMAND_LIST_BEGIN_END_API
-#	define VG_CONFIG_COMMAND_LIST_BEGIN_END_API 1
+#	define VG_CONFIG_COMMAND_LIST_BEGIN_END_API 0
 #endif
 
 #if VG_CONFIG_DEBUG
